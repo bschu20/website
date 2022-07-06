@@ -1,0 +1,65 @@
+{% extends 'template.html' %}
+
+{% block content %}
+    <br/>
+    <br/>
+    <br/>
+{% for message in get_flashed_messages()%}
+
+    <div class="alert" role="alert">
+        {{ message }}
+    </div>
+
+{% endfor %}
+
+
+{% if name %}
+
+    <h1>Hello {{ name }}!! </h1>
+    <br/>
+
+{% else %}
+    
+<div class="master_formo">
+    
+        <form method="POST" >
+            
+            {{ form.hidden_tag() }}<!--will create a CSRF token-->
+            <div class='formo'>
+                {{ form.name.label(class="form-label") }}<!--adds label-->
+                {{ form.name(class="form-control") }}<!--this creates the input box-->
+            </div>
+            <br/>
+            <div class="formo2">
+                {{ form.email.label(class="form-label") }}<!--adds label-->
+                {{ form.email(class="form-control") }}<!--this creates the input box-->
+            </div>
+            <div >
+                {{ form.submit(class="button2") }}<!--this creates the button-->
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="js">
+    <p id='demo'>Hello</p>
+    <script src="{{ url_for('static',filename='js/myjs.js') }}"></script>
+</div>
+
+
+
+{% endif %}
+
+
+
+{% endblock %}

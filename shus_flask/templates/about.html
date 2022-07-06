@@ -1,0 +1,59 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+<div class='main'>
+    <div class='sub1'>
+        <div class='sub_sub1'>
+            <h1 id="hi">Hi, I'm Brandon</h1>
+            <div><img src="{{url_for('static',filename='images/my_face.png')}}"></div>
+        </div>
+        <div class='sub_sub2'>
+            <ul>
+                <li>Tutoring since 2014</li>
+                <li>Have owned and operated Shu's Tutoring since 2016 </li>
+                <li>Currently attending Columbia University for CS-Math</li>
+                <li>Graduated from Cornell University in 2012</li>
+            </ul>
+        </div>
+    </div>
+
+    <h1 id='employees'>Employee(s) of the Year (Every Year)</h1>
+    <div class='sub2'>
+        
+
+        <div class='Bubba_Images'>
+           
+            <div>
+                <img src="{{ url_for('static',filename='images/Apollo.jpeg')}}">
+            </div>
+            <div>
+                <img src="{{ url_for('static',filename='images/Teddy_Rex.jpeg')}}">
+            </div>
+
+                
+           
+        </div>
+
+        <div class='Bubba_Info'>
+            <div id="apollito">
+                <h2>Apollo Schumacher</h2>
+                <p>Tutor</p>
+                <p id='bubba_para'>
+                    Likes to occasionally nap during the sessions. Loves all things food and has never missed a meal. 
+                    He is very patient with his little brother. 
+                </p>
+            </div>
+            <div>
+                <h2>Teddy Rex Schumacher</h2>
+                <p>Tutor</p>
+        
+                <p id='bubba_para'>
+                    Loves to pop in and say hello during our sessions. Occasionally growls when 
+                    the sessions go over time. Loves bothering his big brother. 
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

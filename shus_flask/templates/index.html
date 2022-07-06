@@ -1,0 +1,44 @@
+{% extends 'template.html' %}
+
+{% block content %}
+
+    <h1 id='subjects_offered'>Subjects Offered</h1>
+    <div class='mainMain'>
+    <div class='topics_list'>
+        <ul>
+            <li>Pre-ACT/SAT Prep Work: 
+                Comprehensive review of high school math and English grammar/punctuation</li>
+            <li>SAT</li>
+            <li>PSAT</li>
+            <li>SSAT</li>
+            <li>ACT</li>
+            <li>College Essays</li>
+            <li>Math (Pre-Algebra through Calculus IV)</li>
+            <li>Chemistry</li>
+            <li>Biology</li>
+            <li>Physics</li>
+        </ul>
+    </div>
+
+    <div class='index_para'>
+        <div id="one_on_1">
+            <h2>1-on-1 tutoring</h2>
+        </div>
+        <div id="small_group">
+            <h2>Small group tutoring</h2>
+        </div>
+        
+        <div>
+            <h2>Conducted online using Google products: 
+                Gmail, Google Drive, and Google Jamboard</h2>
+        </div>
+
+        <video width="1300" height="1300" autoplay muted>
+            <source src="{{ url_for('static',filename='images/video_website.mp4')}}">
+        </video>
+    </div>
+
+    
+    </div>
+{% endblock %}
+

@@ -1,0 +1,230 @@
+
+
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
+
+.sign_up{
+    margin:auto;
+}
+
+#welcome{
+    background-color: lightblue;
+    color: lightslategray;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#welcome_to_shus{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.big_bod{
+    background-color: white;
+    text-align: center;
+    
+}
+
+
+.master_formo{
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+.formo{
+    padding-right: 10px;
+}
+.formo2{
+    padding-bottom: 20px;
+}
+.button{
+    
+    margin-left:160px;
+    color:white;
+    background-color: lightskyblue;
+    border-radius: 12px;
+    border: 1px solid lightskyblue;
+}
+
+.button2{
+    
+    margin-left:10px;
+    color:white;
+    background-color: lightskyblue;
+    border-radius: 12px;
+    border: 1px solid lightskyblue;
+}
+
+
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    color:red;
+}
+
+#hello{
+    margin-left: 50px;
+}
+
+.main{
+    display:flex;
+    flex-direction: column;
+}
+
+.sub1{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+    margin-left: 100px;
+}
+
+#employees{
+    text-align: center;
+}
+
+.sub2{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-bottom: 300px;
+}
+
+
+.Bubba_Images{
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 100px;
+
+}
+
+.Bubba_Info{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+}
+
+#hi{
+    padding-bottom: 100px;
+}
+
+.sub_sub2{
+    margin-right: 200px;
+    padding-left: 200px;
+    margin-top: 200px;
+    font-size: large;
+    text-align: left
+}
+
+#apollito{
+    padding-right: 100px;
+   
+}
+
+#bubba_para{
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: left;
+    line-height: 300%;
+}
+
+.mainMain{
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.index_para{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    text-align: center;
+    font-size: x-large;
+}
+
+#one_on_1{
+    padding-bottom: 100px;
+}
+
+#small_group{
+    padding-bottom: 100px;
+}
+
+.topics_list{
+    margin:auto;
+    font-size: x-large;
+    padding-left: 400px;
+    padding-right: 400px;
+    word-spacing: 10px;
+    opacity: .75;
+    text-align: left;
+}
+
+li{
+    padding:10px;
+    font-family: Optima, sans-serif	;
+}
+
+#subjects_offered{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+video{
+    padding-left: 100px;
+}
+
+#footer{
+    background-color: white;
+    text-align: center;
+}
+
+.first_and_last_name_and_email{
+    display: flex;
+    padding-left: 160px;
+
+}
+
+.first_name{
+    padding-right: 10px;
+}
+
+.last_name{
+    padding-right: 10px;;
+}
+
+.search_button{
+    color:white;
+    background-color: lightskyblue;
+    border-radius: 12px;
+    border: 1px solid lightskyblue;
+}
+
+.alert{
+    color: black;
+}
+
+.js{
+    text-align: center;
+}
+
+.db_table{
+    border-radius: 12px;
+    border: 2px solid lightskyblue;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+.da_big_div{
+    display: flex;
+    flex-direction: column;
+}

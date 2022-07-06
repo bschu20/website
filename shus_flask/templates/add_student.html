@@ -1,0 +1,95 @@
+{% extends 'template.html' %}
+
+{% block content %}
+    <br/>
+    <br/>
+    <br/>
+{% for message in get_flashed_messages()%}
+
+    <div class="alert alert-primary" role="alert">
+        {{ message }}
+    </div>
+
+{% endfor %}
+
+
+{% if name %}
+
+<h1> Hello {{ name }}</h1>
+
+    <br/><br/><br/>
+    {% for our_students in our_students %}
+        
+            {{ our_students.id }}   --   {{ our_students.first_name }}   --   {{ our_students.last_name }}   --   
+            {{ our_students.email }} -- <a href="{{url_for('delete',id=our_students.id)}}">Delete</a><br/>
+        
+    {% endfor %}
+
+{% else %}
+<div class='da_big_div'>
+    <div class="sign_up">
+        <h2> Sign Up! </h2>
+    </div>
+    <br/>
+    <br/>
+
+    <div class="master_formo">
+    
+            <form method="POST" >
+                {{ form.hidden_tag() }}<!--will create a CSRF token-->
+
+                <!--separate inputs from submit button-->
+                    <div class="inputs">
+                        <div class='first_and_last_name_and_email'>
+                            <div class='first_name'>
+                                {{ form.first_name.label(class="form-label") }}<!--adds "first name" label-->
+                                {{ form.first_name(class="form-control") }}<!--this creates the first_name input box-->
+                            </div>
+                            <br/>
+                            <div class='last_name'>
+                                {{ form.last_name.label(class="form-label") }}<!--adds "last name" label-->
+                                {{ form.last_name(class="form-control") }}<!--this creates the last_name input box-->
+                            </div>
+                            <br/>
+                            <div class="formo2">
+                                {{ form.email.label(class="form-label") }}<!--adds label-->
+                                {{ form.email(class="form-control") }}<!--this creates the input box-->
+                            </div>
+                    </div>
+                    <!--separate inputs from submit button-->
+                    
+                    <br/>
+                    <div >
+                        {{ form.submit(class="button", type="submit") }}<!--this creates the button-->
+                    </div>
+            
+            
+            </form>
+        
+    </div>
+
+
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class='db_table'>
+        <h3> Student List </h3>
+        {% for our_students in our_students %}
+
+        
+            {{ our_students.id }}   --   {{ our_students.first_name }}   --   {{ our_students.last_name }}   --   
+                {{ our_students.email }} -- <a href="{{url_for('delete',id=our_students.id)}}">Delete</a><br/>
+        
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+
+
+{% endblock %}
